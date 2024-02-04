@@ -1,0 +1,132 @@
+{
+  "debug.allowBreakpointsEverywhere": true,
+  "editor.accessibilitySupport": "off",
+  "editor.detectIndentation": false,
+  "editor.fontFamily": "'Fira Code'",
+  "editor.fontWeight": "400",
+  "editor.formatOnSaveMode": "modifications",
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "editor.largeFileOptimizations": false,
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [
+    80
+  ],
+  "editor.stickyScroll.enabled": true,
+  "editor.tabSize": 2,
+  "files.associations": {
+    "**/*.cshtml": "aspnetcorerazor"
+  },
+  "files.insertFinalNewline": true,
+  "files.eol": "\n",
+  "git.allowForcePush": true,
+  "git.autofetch": true,
+  "git.autoStash": true,
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "never",
+  "git.path": "/opt/homebrew/bin/git",
+  "terminal.integrated.fontSize": 11,
+  "terminal.integrated.scrollback": 5000,
+  "update.mode": "manual",
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.hover.delay": 1000,
+  "workbench.editorAssociations": {
+    "*.ICN": "hexEditor.hexedit",
+    "*.hex": "hexEditor.hexedit"
+  },
+  // Web
+  "debug.javascript.autoAttachFilter": "disabled",
+  "deno.path": "/opt/homebrew/bin/deno",
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "tailwindCSS.includeLanguages": {
+    "typescriptreact": "html"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "[mdx]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter",
+    "editor.suggest.insertMode": "replace"
+  },
+  // CSharp
+  "[csharp]": {
+    "editor.tabSize": 4
+  },
+  // Rust
+  "rust-analyzer.rustfmt.extraArgs": [
+    "--config",
+    "tab_spaces=2"
+  ],
+  "[rust]": {
+    "editor.tabSize": 2
+  },
+  // Python
+  "python.formatting.provider": "autopep8",
+  // Misc extensions
+  "colorize.languages": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "source.css.styled"
+  ],
+  "git-graph.dialog.merge.noFastForward": false,
+  "hexeditor.columnWidth": 16,
+  "hexeditor.defaultEndianness": "little",
+  "hexeditor.inspectorType": "aside",
+  "hexeditor.showDecodedText": true,
+  "omnisharp.organizeImportsOnFormat": true,
+  "powermode.enabled": true,
+  "powermode.presets": "clippy",
+  "powermode.shake.intensity": 1,
+  "redhat.telemetry.enabled": true,
+  // Unsorted
+  "prettify-ts.enableHover": false,
+  "workbench.sideBar.location": "right",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.formatOnSave": true,
+  "prettify-ts.viewNestedTypes": false
+}

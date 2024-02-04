@@ -1,0 +1,10 @@
+[user]
+	email = alfonz@homolik.cz
+	name = Denis Homolík
+[core]
+	excludesfile = /Users/denishomolik/.gitignore_global
+	editor = code --wait
+[commit]
+	template = /Users/denishomolik/.stCommitMsg
+[init]
+	defaultBranch = main
