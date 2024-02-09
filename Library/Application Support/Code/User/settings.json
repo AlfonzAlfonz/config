@@ -1,16 +1,16 @@
 {
   "debug.allowBreakpointsEverywhere": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.accessibilitySupport": "off",
   "editor.detectIndentation": false,
   "editor.fontFamily": "'Fira Code'",
   "editor.fontWeight": "400",
+  "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "modifications",
   "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.largeFileOptimizations": false,
   "editor.renderWhitespace": "all",
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   "editor.stickyScroll.enabled": true,
   "editor.tabSize": 2,
   "files.associations": {
@@ -33,6 +33,7 @@
     "*.ICN": "hexEditor.hexedit",
     "*.hex": "hexEditor.hexedit"
   },
+  "workbench.sideBar.location": "right",
   // Web
   "debug.javascript.autoAttachFilter": "disabled",
   "deno.path": "/opt/homebrew/bin/deno",
@@ -42,6 +43,8 @@
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettify-ts.enableHover": false,
+  "prettify-ts.viewNestedTypes": false,
   "tailwindCSS.includeLanguages": {
     "typescriptreact": "html"
   },
@@ -96,10 +99,7 @@
     "editor.tabSize": 4
   },
   // Rust
-  "rust-analyzer.rustfmt.extraArgs": [
-    "--config",
-    "tab_spaces=2"
-  ],
+  "rust-analyzer.rustfmt.extraArgs": ["--config", "tab_spaces=2"],
   "[rust]": {
     "editor.tabSize": 2
   },
@@ -122,11 +122,15 @@
   "powermode.enabled": true,
   "powermode.presets": "clippy",
   "powermode.shake.intensity": 1,
-  "redhat.telemetry.enabled": true,
+	"redhat.telemetry.enabled": true,
+	"todo-tree.highlights.customHighlight": {
+    "TODO": {
+        "icon": "check",
+        "foreground": "#1d1d1d",
+        "background": "#effa75",
+        "iconColour": "#effa75",
+    },
+	}
   // Unsorted
-  "prettify-ts.enableHover": false,
-  "workbench.sideBar.location": "right",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.formatOnSave": true,
-  "prettify-ts.viewNestedTypes": false
+
 }

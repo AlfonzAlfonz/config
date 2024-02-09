@@ -9,4 +9,7 @@ export PNPM_HOME="/Users/denishomolik/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
+alias ls='eza'
+alias beep='echo -en "\007"'
+
 source ~/.signageos/sosa.sh
