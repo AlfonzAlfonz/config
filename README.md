@@ -1,14 +1,15 @@
-# Personal config files
+# Environment setup repository
 
-This repository stores my personal config files.
+This repository stores all config files required for setting up environment
+which is replicable on any MacOS system.
 
 # Installation
 
-1. Install GNU Stow
-2. Clone this repository to your home directory (for example `~/.stow-config`)
-3. Run `stow .` inside the repository root
+```
+/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/AlfonzAlfonz/config/main/install.sh)"
+```
 
-# Adding new files
+# Adding an pre-existing config file
 
 1. Create an empty file
 2. Run `stow . --adopt`
@@ -21,6 +22,6 @@ Brew files contains all programs installed by homebrew.
 # Run to install all programs
 brew bundle
 
-# Run to update brewfile
+# Run to update Brewfile
 brew bundle --force dump
 ```
