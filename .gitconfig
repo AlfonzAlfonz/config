@@ -8,3 +8,8 @@
 	template = /Users/denishomolik/.stCommitMsg
 [init]
 	defaultBranch = main
+[alias]
+	c = commit
+	s = status
+  lg = log --oneline
+	last = log -1 HEAD

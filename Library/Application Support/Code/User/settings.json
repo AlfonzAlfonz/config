@@ -16,8 +16,11 @@
   "files.associations": {
     "**/*.cshtml": "aspnetcorerazor"
   },
-  "files.insertFinalNewline": true,
   "files.eol": "\n",
+  "files.exclude": {
+    "**/.git": false
+  },
+  "files.insertFinalNewline": true,
   "git.allowForcePush": true,
   "git.autofetch": true,
   "git.autoStash": true,
