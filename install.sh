@@ -69,6 +69,8 @@ fi
 
 title "Clean up"
 
+lpass logout -f
+
 cd ~/.stow-config
 git remote set-url origin git@github.com:AlfonzAlfonz/config.git
 
