@@ -1,4 +1,4 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(brew shellenv)"
 
 # Setting the LG_WEBOS_TV_SDK_HOME variable to the parent directory of CLI
 export LG_WEBOS_TV_SDK_HOME="/Users/denishomolik/webOS_TV_SDK"

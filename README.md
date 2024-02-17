@@ -12,3 +12,15 @@ This repository stores my personal config files.
 
 1. Create an empty file
 2. Run `stow . --adopt`
+
+# Brewfile
+
+Brew files contains all programs installed by homebrew.
+
+```bash
+# Run to install all programs
+brew bundle
+
+# Run to update brewfile
+brew bundle --force dump
+```
