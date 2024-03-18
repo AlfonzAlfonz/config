@@ -8,4 +8,7 @@ export PATH="$PNPM_HOME:$PATH"
 alias ls='eza'
 alias beep='echo -en "\007"'
 
+alias x86="$env /usr/bin/arch -x86_64 /bin/zsh ---login"
+alias arm="$env /usr/bin/arch -arm64 /bin/zsh ---login"
+
 source ~/.signageos/sosa.sh
