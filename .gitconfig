@@ -13,3 +13,8 @@
 	s = status
   lg = log --oneline
 	last = log -1 HEAD
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
