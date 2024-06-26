@@ -27,16 +27,36 @@
   "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "never",
   "git.path": "/opt/homebrew/bin/git",
+  "scm.showChangesSummary": false,
+  "scm.showIncomingChanges": "never",
+  "scm.showOutgoingChanges": "never",
   "terminal.integrated.fontSize": 11,
   "terminal.integrated.scrollback": 5000,
   "update.mode": "manual",
+  "workbench.colorCustomizations": {
+    "editorInfo.foreground": "#5960c3"
+  },
   "workbench.colorTheme": "Default Dark+",
   "workbench.hover.delay": 1000,
+  "workbench.editor.customLabels.patterns": {
+    "**/index.ts": "${dirname}/index.ts",
+    "**/index.tsx": "${dirname}/index.tsx",
+    "**/index.test.ts": "${dirname}/index.test.ts",
+    "**/app/**/index.tsx": "${dirname}/index.tsx",
+    // Next JS
+    "**/app/**/page.tsx": "${dirname}/page.tsx",
+    "**/app/**/layout.tsx": "${dirname}/layout.tsx",
+    "**/app/**/template.tsx": "${dirname}/template.tsx"
+  },
   "workbench.editorAssociations": {
     "*.ICN": "hexEditor.hexedit",
     "*.hex": "hexEditor.hexedit"
   },
   "workbench.sideBar.location": "right",
+  "search.exclude": {
+    "**/.git": true
+  },
+
   // Web
   "debug.javascript.autoAttachFilter": "disabled",
   "deno.path": "/opt/homebrew/bin/deno",
@@ -46,7 +66,7 @@
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "prettify-ts.enableHover": true,
+  "prettify-ts.enableHover": false,
   "prettify-ts.viewNestedTypes": false,
   "tailwindCSS.includeLanguages": {
     "typescriptreact": "html"
@@ -59,13 +79,13 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -106,8 +126,6 @@
   "[rust]": {
     "editor.tabSize": 2
   },
-  // Python
-  "python.formatting.provider": "autopep8",
   // Misc extensions
   "colorize.languages": [
     "javascript",
@@ -123,17 +141,51 @@
   "hexeditor.showDecodedText": true,
   "omnisharp.organizeImportsOnFormat": true,
   "powermode.enabled": true,
+  "powermode.combo.location": "off",
   "powermode.presets": "clippy",
-  "powermode.shake.intensity": 1,
-	"redhat.telemetry.enabled": true,
-	"todo-tree.highlights.customHighlight": {
+  "powermode.shake.intensity": 0,
+  "redhat.telemetry.enabled": true,
+  "todo-tree.highlights.customHighlight": {
     "TODO": {
-        "icon": "check",
-        "foreground": "#1d1d1d",
-        "background": "#effa75",
-        "iconColour": "#effa75",
-    },
-	}
+      "icon": "check",
+      "foreground": "#1d1d1d",
+      "background": "#effa75",
+      "iconColour": "#effa75"
+    }
+  },
+  "cSpell.userWords": [
+    "alfonz",
+    "appinfo",
+    "autodrain",
+    "autozip",
+    "brightsign",
+    "bslint",
+    "Buildtime",
+    "chromeos",
+    "codestyle",
+    "CONSOLEJS",
+    "dataurl",
+    "esbuild",
+    "escheck",
+    "healthcheck",
+    "Homolík",
+    "iife",
+    "jsapi",
+    "localstorage",
+    "minio",
+    "nodenext",
+    "nodeserver",
+    "outdir",
+    "SCAP",
+    "SERVLET",
+    "signageos",
+    "signageoslandscape",
+    "spyable",
+    "sssp",
+    "svgr",
+    "Tizen",
+    "userconfig",
+    "webos"
+  ],
   // Unsorted
-
 }
