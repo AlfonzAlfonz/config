@@ -26,10 +26,34 @@ sosa() {
     fi
 
     if [ "$1" = "-i" ]; then
-        nvm use
+        fnm use
         npm i --ignore-scripts
 
     fi
 
     return 0
 }
+
+
+if [ -n "$ZSH_VERSION" ]; then
+
+  autoload -U add-zsh-hook
+  _sosa_autoload_hook () {
+    echo "running sosa..."
+    if [[ $PWD/ = /Users/denishomolik/projects/s/* ]]; then
+      if [ -z "$NPMNPM_AUTH_TOKEN" ]; then
+        sosa
+      fi
+    fi
+  }
+
+  add-zsh-hook chpwd _sosa_autoload_hook \
+      && _sosa_autoload_hook
+
+  rehash
+
+elif [ -n "$BASH_VERSION" ]; then
+  # bash is not supported rn:(
+else
+  # not supported as well:/
+fi
