@@ -13,6 +13,8 @@
 	s = status
   lg = log --oneline
 	last = log -1 HEAD
+  squash = rebase --autosquash
+  lock-reset = checkout HEAD -- package-lock.json
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
