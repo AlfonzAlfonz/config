@@ -1,4 +1,4 @@
-eval "$(brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Setting the LG_WEBOS_TV_SDK_HOME variable to the parent directory of CLI
 export LG_WEBOS_TV_SDK_HOME="/Users/denishomolik/webOS_TV_SDK"
@@ -11,3 +11,4 @@ if [ -d "$LG_WEBOS_TV_SDK_HOME/CLI/bin" ]; then
 fi
 
 export PATH=$PATH:/Users/denishomolik/tizen-studio/tools/ide/bin/
+export PATH=$PATH:/Users/denishomolik/tizen-studio/tools
