@@ -11,4 +11,6 @@ alias beep='echo -en "\007"'
 alias x86="$env /usr/bin/arch -x86_64 /bin/zsh ---login"
 alias arm="$env /usr/bin/arch -arm64 /bin/zsh ---login"
 
+alias sos-tizen-pack="node /Users/denishomolik/projects/s/display-tizen/tools/pack/pack-wgt.mjs"
+
 source ~/.signageos/sosa.sh
