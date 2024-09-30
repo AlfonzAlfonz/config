@@ -13,4 +13,6 @@ alias arm="$env /usr/bin/arch -arm64 /bin/zsh ---login"
 
 alias sos-tizen-pack="node /Users/denishomolik/projects/s/display-tizen/tools/pack/pack-wgt.mjs"
 
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+
 source ~/.signageos/sosa.sh
