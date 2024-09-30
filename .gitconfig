@@ -15,6 +15,7 @@
 	last = log -1 HEAD
   squash = rebase --autosquash
   lock-reset = checkout HEAD -- package-lock.json
+  dangling-commits = "!git fsck --lost-found | grep \"dangling commit\" | awk '{print $3}' | while read -r line; do git log --format=\"%ai %H %s\" -n 1 $line; done | sort"
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
