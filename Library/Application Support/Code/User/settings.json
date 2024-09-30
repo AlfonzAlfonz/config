@@ -1,6 +1,7 @@
 {
   "debug.allowBreakpointsEverywhere": true,
   "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": true,
   "editor.accessibilitySupport": "off",
   "editor.detectIndentation": false,
   "editor.fontFamily": "'Fira Code'",
@@ -10,7 +11,9 @@
   "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.largeFileOptimizations": false,
   "editor.renderWhitespace": "all",
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "editor.stickyScroll.enabled": true,
   "editor.tabSize": 2,
   "files.associations": {
@@ -28,11 +31,13 @@
   "git.openRepositoryInParentFolders": "never",
   "git.path": "/opt/homebrew/bin/git",
   "scm.showChangesSummary": false,
+  "scm.showHistoryGraph": false,
   "scm.showIncomingChanges": "never",
   "scm.showOutgoingChanges": "never",
   "terminal.integrated.fontSize": 11,
   "terminal.integrated.scrollback": 5000,
   "update.mode": "manual",
+  "window.newWindowDimensions": "maximized",
   "workbench.colorCustomizations": {
     "editorInfo.foreground": "#5960c3"
   },
@@ -41,6 +46,7 @@
   "workbench.editor.customLabels.patterns": {
     "**/index.ts": "${dirname}/index.ts",
     "**/index.tsx": "${dirname}/index.tsx",
+    "**/index.spec.ts": "${dirname}/index.spec.ts",
     "**/index.test.ts": "${dirname}/index.test.ts",
     "**/app/**/index.tsx": "${dirname}/index.tsx",
     // Next JS
@@ -56,7 +62,6 @@
   "search.exclude": {
     "**/.git": true
   },
-
   // Web
   "debug.javascript.autoAttachFilter": "disabled",
   "deno.path": "/opt/homebrew/bin/deno",
@@ -99,6 +104,7 @@
   },
   "[markdown]": {
     "editor.wordWrap": "on",
+    "editor.fontLigatures": true,
     "editor.quickSuggestions": {
       "comments": "off",
       "strings": "off",
@@ -122,7 +128,10 @@
     "editor.tabSize": 4
   },
   // Rust
-  "rust-analyzer.rustfmt.extraArgs": ["--config", "tab_spaces=2"],
+  "rust-analyzer.rustfmt.extraArgs": [
+    "--config",
+    "tab_spaces=2"
+  ],
   "[rust]": {
     "editor.tabSize": 2
   },
@@ -158,30 +167,39 @@
     "appinfo",
     "autodrain",
     "autozip",
+    "Behaviour",
     "brightsign",
+    "Broadsign",
     "bslint",
     "Buildtime",
     "chromeos",
     "codestyle",
     "CONSOLEJS",
     "dataurl",
+    "defered",
     "esbuild",
     "escheck",
+    "Expirable",
     "healthcheck",
     "Homolík",
     "iife",
     "jsapi",
+    "Latlong",
+    "Lerp",
     "localstorage",
+    "Mathf",
     "minio",
     "nodenext",
     "nodeserver",
     "outdir",
+    "protobuf",
     "SCAP",
     "SERVLET",
     "signageos",
     "signageoslandscape",
     "spyable",
     "sssp",
+    "Stepable",
     "svgr",
     "Tizen",
     "userconfig",

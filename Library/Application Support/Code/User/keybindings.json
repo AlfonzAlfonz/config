@@ -67,5 +67,42 @@
   {
     "key": "ctrl+r",
     "command": "-workbench.action.openRecent"
-  }
+  },
+  {
+    "key": "f10",
+    "command": "editor.action.organizeImports",
+    "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+  },
+  {
+    "key": "shift+alt+o",
+    "command": "-editor.action.organizeImports",
+    "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+	},
+	{
+		"key": "ctrl+shift+]",
+		"command": "workbench.action.terminal.focusPrevious",
+		"when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+	},
+	{
+		"key": "shift+cmd+[",
+		"command": "-workbench.action.terminal.focusPrevious",
+		"when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+	},
+	{
+		"key": "shift+cmd+[",
+		"command": "-workbench.action.debug.prevConsole",
+		"when": "inDebugRepl"
+	},
+	{
+		"key": "shift+cmd+[",
+		"command": "-workbench.action.previousEditor"
+	},
+	{
+		"key": "shift+cmd+[",
+		"command": "workbench.scm.action.scm.viewChanges"
+	},
+	{
+		"key": "shift+cmd+[",
+		"command": "workbench.scm.toggleVisibility"
+	}
 ]
