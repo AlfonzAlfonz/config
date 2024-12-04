@@ -38,17 +38,16 @@
   "terminal.integrated.scrollback": 5000,
   "update.mode": "manual",
   "window.newWindowDimensions": "maximized",
-  "workbench.colorCustomizations": {
-    "editorInfo.foreground": "#5960c3"
-  },
   "workbench.colorTheme": "Default Dark+",
   "workbench.hover.delay": 1000,
   "workbench.editor.customLabels.patterns": {
     "**/index.ts": "${dirname}/index.ts",
     "**/index.tsx": "${dirname}/index.tsx",
+    "**/index.mjs": "${dirname}/index.mjs",
     "**/index.spec.ts": "${dirname}/index.spec.ts",
     "**/index.test.ts": "${dirname}/index.test.ts",
     "**/app/**/index.tsx": "${dirname}/index.tsx",
+		"**/utils.ts": "${dirname}/utils.ts",
     // Next JS
     "**/app/**/page.tsx": "${dirname}/page.tsx",
     "**/app/**/layout.tsx": "${dirname}/layout.tsx",
@@ -162,6 +161,7 @@
       "iconColour": "#effa75"
     }
   },
+	"cSpell.textDecorationColor": "#474d9b",
   "cSpell.userWords": [
     "alfonz",
     "appinfo",
@@ -205,5 +205,10 @@
     "userconfig",
     "webos"
   ],
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "clangd.path": "/Users/denishomolik/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/18.1.3/clangd_18.1.3/bin/clangd",
   // Unsorted
 }
