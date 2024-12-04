@@ -8,7 +8,7 @@ sosa() {
     local DOMAIN_OWNER=524256255273
     local REGISTRY_NAME='private'
 
-    local SOSA_TOKENV_DISABLE=1
+    local SOSA_TOKENV_DISABLE=""
     local SOSA_TOKENV=~/.scfg/.signageos/tokenv
     local SOSA_TOKENV_DIR=$(dirname $SOSA_TOKENV)
 
@@ -34,6 +34,7 @@ sosa() {
     fi
 
     if [ -z "$env_setup" ]; then
+      aws sso login
 
       export NPM_REGISTRY_URL=$(aws codeartifact get-repository-endpoint --domain ${DOMAIN} --domain-owner ${DOMAIN_OWNER} --repository ${REGISTRY_NAME} --format npm --query repositoryEndpoint --output text --region eu-central-1)
       export NPM_REGISTRY_HOST=$(echo $NPM_REGISTRY_URL | sed -n "s/^https:\\/\\/\\(.*\\)\\/$/\\1/p")
