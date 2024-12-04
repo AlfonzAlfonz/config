@@ -7,24 +7,30 @@ sosa() {
     local DOMAIN='signageos'
     local DOMAIN_OWNER=524256255273
     local REGISTRY_NAME='private'
+
+    local SOSA_TOKENV_DISABLE=1
     local SOSA_TOKENV=~/.scfg/.signageos/tokenv
     local SOSA_TOKENV_DIR=$(dirname $SOSA_TOKENV)
 
-    if ! [[ $(find $SOSA_TOKENV_DIR -print) ]]; then
-      echo "missing sos folder $SOSA_TOKENV_DIR"
-    fi
+    if [ -z "$SOSA_TOKENV_DISABLE" ]; then
 
-    local env_setup=""
-
-    if [ -f "$SOSA_TOKENV" ]; then
-      ((tokenv_age_s = $(date +%s) - $(date -r $SOSA_TOKENV +%s)))
-
-      if (( tokenv_age_s < 18000 )); then # 18000s is 5 hours
-        source $SOSA_TOKENV
-        env_setup=1
-      else
-        rm $SOSA_TOKENV
+      if ! [[ $(find $SOSA_TOKENV_DIR -print) ]]; then
+        echo "missing sos folder $SOSA_TOKENV_DIR"
       fi
+
+      local env_setup=""
+
+      if [ -f "$SOSA_TOKENV" ]; then
+        ((tokenv_age_s = $(date +%s) - $(date -r $SOSA_TOKENV +%s)))
+
+        if (( tokenv_age_s < 18000 )); then # 18000s is 5 hours
+          source $SOSA_TOKENV
+          env_setup=1
+        else
+          rm $SOSA_TOKENV
+        fi
+      fi
+
     fi
 
     if [ -z "$env_setup" ]; then
@@ -43,10 +49,12 @@ sosa() {
 
       echo -e "${GREEN}Successfully set connection to ${NPM_REGISTRY_URL}.${RESTORE}"
 
-      echo "#!/bin/zsh" > $SOSA_TOKENV
-      echo "export NPM_REGISTRY_URL=${NPM_REGISTRY_URL}" >> $SOSA_TOKENV
-      echo "export NPM_REGISTRY_HOST=${NPM_REGISTRY_HOST}" >> $SOSA_TOKENV
-      echo "export NPM_AUTH_TOKEN=${NPM_AUTH_TOKEN}" >> $SOSA_TOKENV
+      if [ -z "$SOSA_TOKENV_DISABLE" ]; then
+        echo "#!/bin/zsh" > $SOSA_TOKENV
+        echo "export NPM_REGISTRY_URL=${NPM_REGISTRY_URL}" >> $SOSA_TOKENV
+        echo "export NPM_REGISTRY_HOST=${NPM_REGISTRY_HOST}" >> $SOSA_TOKENV
+        echo "export NPM_AUTH_TOKEN=${NPM_AUTH_TOKEN}" >> $SOSA_TOKENV
+      fi
     fi
 
     if [ "$1" = "-p" ]; then
